@@ -30,6 +30,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 10px;
 }
 
@@ -46,6 +47,12 @@
     object-fit: cover;
     padding: 10px;
 }
+
+#solution,
+#cta-section {
+    margin-top: 120px;
+}
+
 
 /* -------shared style end--------- */
 /* ----------------------------header style area start------------------ */
@@ -221,9 +228,6 @@ header #banner .banner-container {
 /* ---------problem section style start------ */
 
 /* ---------solution section start------- */
-#solution {
-    margin-top: 120px;
-}
 
 #solution .solution-container {
     display: flex;
@@ -266,5 +270,53 @@ header #banner .banner-container {
 
 /* ---------solution section end------- */
 
+/* ----------call to action area style start------- */
+
+#cta-section .cta-container {
+    padding: 120px;
+    text-align: center;
+    background-color: #F7F6F2;
+    border-radius: 12px;
+}
+
+#cta-section .cta-container .section-heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#cta-section .cta-container .cta-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #627382;
+    margin-bottom: 24px;
+}
+
+#cta-section .cta-container .cta-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#cta-section .cta-container .cta-btn button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    background-color: #469165;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+#cta-section .cta-container .cta-info {
+    font-size: 16px;
+    line-height: 20px;
+    color: #627382;
+}
+
+/* ----------call to action area style end------- */
 
 /* ------------main area style end--------- */

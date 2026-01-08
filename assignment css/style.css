@@ -4,7 +4,57 @@
     box-sizing: border-box;
 }
 
+/* --------shared style start------- */
 .font-open-sans {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
 }
+
+.container {
+    width: 85%;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    background-color: #469165;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* -------shared style end--------- */
+
+/* ----------nav style start-------- */
+header .nav-container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-container .nav-logo {
+    max-width: 138px;
+}
+
+header .nav-container .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+header .nav-container .nav-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 152%;
+}
+
+/* header .nav-container .nav-btn (declare inside the shared style) */
+
+/* ----------nav style end---------- */

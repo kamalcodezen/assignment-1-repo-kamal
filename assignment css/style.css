@@ -16,7 +16,11 @@
     margin: 0 auto;
 }
 
-.btn {
+.green-text {
+    color: #469165;
+}
+
+.green-btn {
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
@@ -24,11 +28,13 @@
     background-color: #469165;
     border: none;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-
 /* -------shared style end--------- */
-
+/* ----------------------------header style area start------------------ */
 /* ----------nav style start-------- */
 header .nav-container {
     padding: 16px 0;
@@ -55,6 +61,106 @@ header .nav-container .nav-menu a {
     line-height: 152%;
 }
 
-/* header .nav-container .nav-btn (declare inside the shared style) */
+
+.nav-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    background-color: #469165;
+    border: none;
+    border-radius: 5px;
+}
 
 /* ----------nav style end---------- */
+
+/* ---------banner heading style start------------- */
+header #banner {
+    background: url("../assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 630px;
+
+}
+
+header #banner .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 115px;
+
+}
+
+#banner .banner-container .banner-content {
+    text-align: center;
+}
+
+.banner-content .early-access {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #FFFFFF;
+    border-radius: 1000px;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+}
+
+.banner-content .early-access .dot-style {
+    width: 15px;
+    height: 15px;
+    background-color: #469165;
+    border-radius: 50%;
+}
+
+.banner-content .early-access .early-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #469165;
+}
+
+.banner-container .banner-heading h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+
+}
+
+.banner-container .banner-heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+
+.banner-content .banner-btn a {
+    text-decoration: none;
+}
+
+.banner-container .banner-content .banner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* ----------green color button shared style------- */
+
+.banner-content .banner-btn .white-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 13.5px 16px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---------banner heading style end------------- */
+
+/* ----------------------------header style area end------------------ */

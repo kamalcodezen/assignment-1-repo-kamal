@@ -6,7 +6,7 @@
 
 /* --------shared style start------- */
 .font-open-sans {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
 
@@ -20,20 +20,6 @@
     color: #469165;
 }
 
-.green-btn {
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFFFFF;
-    padding: 12px 16px;
-    background-color: #469165;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    cursor: pointer;
-}
 
 .section-heading {
     font-size: 48px;
@@ -96,6 +82,12 @@ header .nav-container .nav-menu a {
     cursor: pointer;
 }
 
+.nav-btn:hover {
+    transition: 1s ease;
+    transform: rotateX(360deg);
+}
+
+
 /* ----------nav style end---------- */
 
 /* ---------banner heading style start------------- */
@@ -128,6 +120,7 @@ header #banner .banner-container {
     border-radius: 1000px;
     padding: 8px 12px;
     margin-bottom: 14px;
+    cursor: pointer;
 }
 
 .banner-content .early-access .dot-style {
@@ -135,6 +128,7 @@ header #banner .banner-container {
     height: 15px;
     background-color: #469165;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .banner-content .early-access .early-text {
@@ -170,7 +164,28 @@ header #banner .banner-container {
     gap: 16px;
 }
 
-/* ----------green color button shared style------- */
+.banner-content .banner-btn .green-btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    background-color: #469165;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.banner-btn .green-btn:hover {
+    border: 1px solid white;
+    background: none;
+    transition: 1s;
+    transition: 1s;
+    transform: translate(-14px);
+}
 
 .banner-content .banner-btn .white-btn {
     font-size: 16px;
@@ -186,11 +201,19 @@ header #banner .banner-container {
     cursor: pointer;
 }
 
+.banner-btn .white-btn:hover {
+    border: none;
+    background-color: #469165;
+    transition: 1s;
+    transform: translate(14px);
+}
+
 /* ---------banner heading style end------------- */
 
 /* ----------------------------header style area end------------------ */
 
-/* ------------main area style start--------- */
+/* --------------main area style start----------- */
+
 /* ---------problem section style start------ */
 #problem .problem-container {
     padding-top: 50px;
@@ -316,6 +339,12 @@ header #banner .banner-container {
     cursor: pointer;
 }
 
+.cta-container .cta-btn button:hover {
+    transition: 1s ease;
+    transform: scale(1.2);
+    background: none;
+}
+
 #cta-section .cta-container .cta-info {
     font-size: 16px;
     line-height: 20px;
@@ -362,7 +391,7 @@ footer .footer-container .copyright {
     line-height: 24px;
     padding: 30px 0;
     text-align: center;
-    border-top:1px solid #172d43;
+    border-top: 1px solid #172d43;
 
 }
 

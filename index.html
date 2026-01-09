@@ -19,6 +19,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- -------------custom css link------------ -->
     <link rel="stylesheet" href="./assignment css/style.css">
+    <link rel="stylesheet" href="./assignment css/responsive.css">
     <!-- ------------favicon link---------- -->
     <link rel="shortcut icon" href="assets/logo-footer.png" type="image/x-icon">
     <title>Knowledge vault</title>
@@ -32,10 +33,10 @@
             <div class="nav-logo">
                 <img src="./assets/logo-navbar.png" alt="Knowledge Vault logo">
             </div>
-            <ul class="nav-menu">
-                <li><a href="">Features</a></li>
-                <li><a href="">How It Works</a></li>
-                <li><a href="">Why It's Different</a></li>
+            <ul class="nav-menu        hidden">
+                <li class="hidden"><a href="">Features</a></li>
+                <li class="hidden"><a href="">How It Works</a></li>
+                <li class="hidden"><a href="">Why It's Different</a></li>
             </ul>
             <div>
                 <a href=""><button class="nav-btn">Get Early Access</button></a>
@@ -45,15 +46,15 @@
 
         <!-- --------banner style start------- -->
         <section id="banner">
-            <div class="banner-container    container">
+            <div class="banner-container    container ">
                 <div class="banner-content">
                     <div class="early-access">
                         <span class="dot-style"></span>
                         <span class="early-text">Early Access Now Open</span>
                     </div>
                     <div class="banner-heading">
-                        <h2>Structured Thinking,</h2>
-                        <h2> <span class="green-text"> Not Just Note-Taking.</span></h2>
+                        <h1>Structured Thinking,</h1>
+                        <h1> <span class="green-text"> Not Just Note-Taking.</span></h1>
                         <p>A private space to store notes, links, and learning summaries — designed to <br>
                             help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
                     </div>
@@ -70,7 +71,7 @@
     <!-- --------header area end----------- -->
 
     <!-- ------main area start--------- -->
-    <main>
+    <main class="hidden">
         <!-- ---------problem section start----- -->
         <section id="problem">
             <div class="problem-container   container">
@@ -110,34 +111,39 @@
         <!-- --------solution section start------ -->
         <section id="solution">
             <div class="solution-container   container">
-                <div class="solution-img">
-                    <img src="./assets/knowledge.png" alt="Knowledge">
-                </div>
-                <div class="solution-content">
-                    <p class="solution-text">The Solution</p>
-                    <h2>Your Second Brain,<br>
-                        Structured By Design.</h2>
-                    <p class="solution-info">Personal Knowledge Vault isn't another note-taking app. z
-                        <br>
-                        It's a thinking environment where every note, link, and summary <br>
-                        becomes part of an interconnected web of understanding.
-                    </p>
-                    <ul class="solution-list">
-                        <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Capture ideas with
-                            structure
-                            built-in from day
-                            one</li>
-                        <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Connect related concepts
-                            automatically as you
-                            write</li>
-                        <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Build lasting knowledge
-                            through
-                            reflection
-                            prompts</li>
-                        <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Find anything instantly
-                            with
-                            semantic search</li>
-                    </ul>
+                <div class="solution-grid">
+                    <div class="solution-img">
+                        <img src="./assets/knowledge.png" alt="Knowledge">
+                    </div>
+                    <div class="solution-content">
+                        <p class="solution-text">The Solution</p>
+                        <h2>Your Second Brain,<br>
+                            Structured By Design.</h2>
+                        <p class="solution-info">Personal Knowledge Vault isn't another note-taking app. z
+                            <br>
+                            It's a thinking environment where every note, link, and summary <br>
+                            becomes part of an interconnected web of understanding.
+                        </p>
+                        <ul class="solution-list">
+                            <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Capture ideas with
+                                structure
+                                built-in from day
+                                one</li>
+                            <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Connect related
+                                concepts
+                                automatically as you
+                                write</li>
+                            <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Build lasting
+                                knowledge
+                                through
+                                reflection
+                                prompts</li>
+                            <li class="list"><img src="./assets/CheckCircle.png" alt="CheckCircle">Find anything
+                                instantly
+                                with
+                                semantic search</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,7 +167,7 @@
     <!-- ------main area end--------- -->
 
     <!-- -----footer area start------ -->
-    <footer>
+    <footer class="hidden">
         <section class="footer-container    container">
             <div class="social">
                 <div class="logo">

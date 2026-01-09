@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /* --------shared style start------- */
@@ -11,18 +12,18 @@
 }
 
 .container {
-    width: 85%;
+    width: 100%;
     max-width: 1360px;
     margin: 0 auto;
+    padding-inline: clamp(16px, 4vw, 32px);
 }
 
 .green-text {
     color: #469165;
 }
 
-
 .section-heading {
-    font-size: 48px;
+    font-size: clamp(25px, 4.5vw, 48px);
     font-weight: bold;
     text-align: center;
     margin-bottom: 16px;
@@ -38,12 +39,14 @@
 #solution,
 #cta-section,
 footer {
-    margin-top: 120px;
+    margin-top: clamp(70px, 8vw, 120px);
 }
 
 
 /* -------shared style end--------- */
+
 /* ----------------------------header style area start------------------ */
+
 /* ----------nav style start-------- */
 header .nav-container {
     padding: 16px 0;
@@ -54,6 +57,8 @@ header .nav-container {
 
 header .nav-container .nav-logo {
     max-width: 138px;
+    width: 100%;
+    height: auto;
 }
 
 header .nav-container .nav-menu {
@@ -70,9 +75,8 @@ header .nav-container .nav-menu a {
     line-height: 152%;
 }
 
-
 .nav-btn {
-    font-size: 16px;
+    font-size: clamp(14px, 1.8vw, 16px);
     font-weight: 600;
     color: #FFFFFF;
     padding: 12px 16px;
@@ -87,7 +91,6 @@ header .nav-container .nav-menu a {
     transform: rotateX(360deg);
 }
 
-
 /* ----------nav style end---------- */
 
 /* ---------banner heading style start------------- */
@@ -96,15 +99,14 @@ header #banner {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 630px;
-
+    min-height: clamp(630px, 85vh, 900px);
 }
 
 header #banner .banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 115px;
+    padding-top: clamp(60px, 8vw, 115px);
 
 }
 
@@ -132,13 +134,13 @@ header #banner .banner-container {
 }
 
 .banner-content .early-access .early-text {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 500;
     color: #469165;
 }
 
-.banner-container .banner-heading h2 {
-    font-size: 60px;
+.banner-container .banner-heading h1 {
+    font-size: clamp(40px, 5vw, 60px);
     font-weight: bold;
     color: #FFFFFF;
     margin-bottom: 14px;
@@ -146,7 +148,7 @@ header #banner .banner-container {
 }
 
 .banner-container .banner-heading p {
-    font-size: 15px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 400;
     line-height: 28px;
     color: #FFFFFF;
@@ -165,7 +167,7 @@ header #banner .banner-container {
 }
 
 .banner-content .banner-btn .green-btn {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     color: #FFFFFF;
     padding: 12px 16px;
@@ -188,7 +190,7 @@ header #banner .banner-container {
 }
 
 .banner-content .banner-btn .white-btn {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     color: #FFFFFF;
     padding: 13.5px 16px;
@@ -216,11 +218,11 @@ header #banner .banner-container {
 
 /* ---------problem section style start-------- */
 #problem .problem-container {
-    padding-top: 50px;
+    padding-top: clamp(35px, 4vw, 50px);
 }
 
 #problem .problem-container .problem-heading p {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     line-height: 20px;
     color: #627382;
     margin-bottom: 44px;
@@ -234,59 +236,77 @@ header #banner .banner-container {
 
 .problem-container .card-box .card {
     text-align: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 24px;
     border-radius: 8px;
-    box-shadow:  0 0 8px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
     background: rgba(255, 255, 255, 1);
 }
 
 .problem-container .card-box .card h4 {
-    font-size: 24px;
+    font-size: clamp(19px, 2.5vw, 24px);
     font-weight: 600;
     margin-top: 16px;
     margin-bottom: 16px;
     color: #001931;
 }
 
-.problem-container .card-box .card p{
-    font-size:16px;
-    line-height:20px ;
-    color:#627382 ;
+.problem-container .card-box .card p {
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 20px;
+    color: #627382;
 }
+
 /* ---------problem section style end-------- */
 
 /* ---------solution section start---------- */
 
 #solution .solution-container {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 60px;
 }
 
+#solution .solution-container .solution-grid {
+    display: grid;
+    align-items: center;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.solution-container .solution-grid .solution-img {
+    width: clamp(300px, 40vw, 600px);
+}
+
+.solution-container .solution-grid .solution-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .solution-container .solution-content .solution-text {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     text-transform: uppercase;
     line-height: 20px;
     color: #469165;
     font-weight: 500;
     margin-bottom: 16px;
+
 }
 
 .solution-container .solution-content h2 {
-    font-size: 48px;
+    font-size: clamp(24px, 3.5vw, 48px);
     font-weight: bold;
     margin-bottom: 16px;
 }
 
 .solution-container .solution-content .solution-info {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     line-height: 20px;
     color: #627382;
-    margin-bottom: 40px;
+    margin-bottom: clamp(20px, 3.5vw, 40px);
 }
 
 .solution-container .solution-content .solution-list li {
@@ -305,19 +325,19 @@ header #banner .banner-container {
 /* ----------call to action area style start------- */
 
 #cta-section .cta-container {
-    padding: 120px;
+    padding: clamp(70px, 8vw, 120px);
     text-align: center;
     background-color: #F7F6F2;
     border-radius: 12px;
 }
 
 #cta-section .cta-container .section-heading {
-    font-size: 40px;
+    font-size: clamp(22px.3.5vw, 40px);
     font-weight: bold;
 }
 
 #cta-section .cta-container .cta-text {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     line-height: 20px;
     color: #627382;
     margin-bottom: 24px;
@@ -330,7 +350,7 @@ header #banner .banner-container {
 }
 
 #cta-section .cta-container .cta-btn button {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     color: #FFFFFF;
     padding: 12px 16px;
@@ -351,7 +371,7 @@ header #banner .banner-container {
 }
 
 #cta-section .cta-container .cta-info {
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     line-height: 20px;
     color: #627382;
 }
@@ -366,18 +386,18 @@ footer {
 }
 
 footer .footer-container {
-    padding-top: 120px;
+    padding-top: clamp(70px, 8vw, 120px);
 }
 
 footer .footer-container .social {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: clamp(50px, 5vw, 80px);
 }
 
 .footer-container .social .link p {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: clamp(16px 2.5vw, 20px);
     line-height: 28px;
     margin-bottom: 16px;
 }
@@ -392,7 +412,7 @@ footer .footer-container .social {
 
 footer .footer-container .copyright {
     color: #FAFAFA;
-    font-size: 16px;
+    font-size: clamp(14px, 2vw, 16px);
     line-height: 24px;
     padding: 30px 0;
     text-align: center;

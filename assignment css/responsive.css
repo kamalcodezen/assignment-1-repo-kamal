@@ -1,0 +1,29 @@
+/* ===== Laptop ===== */
+@media screen and (max-width:1024px) {}
+
+
+/* ===== Tablet ===== */
+@media screen and (max-width:768px) {
+
+    header .nav-container .nav-menu {
+        display: none;
+    }
+
+    #problem .problem-container .card-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== Large Mobile ===== */
+@media screen and (max-width:640px) {
+
+    .solution-container .solution-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #problem .problem-container .card-box {
+        grid-template-columns: 1fr;
+    }
+
+}

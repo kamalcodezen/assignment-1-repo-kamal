@@ -70,7 +70,7 @@ footer {
     height: auto;
     display: flex;
     align-items: center;
-    animation: logo 1.2s infinite;
+    animation: logo 2s infinite;
 }
 
 @keyframes logo {

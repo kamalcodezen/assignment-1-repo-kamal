@@ -241,7 +241,7 @@ header #banner {
     font-size: clamp(14px, 2vw, 16px);
     font-weight: 600;
     color: #FFFFFF;
-    padding: 11px 16px;
+    padding: 13px 16px;
     background: none;
     border: 1px solid white;
     border-radius: 5px;

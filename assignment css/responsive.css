@@ -5,7 +5,7 @@
 /* ===== Tablet ===== */
 @media screen and (max-width:768px) {
 
-    header .nav-container .nav-menu {
+    .nav-container .nav-menu {
         display: none;
     }
 

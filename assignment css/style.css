@@ -48,31 +48,60 @@ footer {
 /* ----------------------------header style area start------------------ */
 
 /* ----------nav style start-------- */
-header .nav-container {
-    padding: 16px 0;
+#nav-section {
+    background: url("../assets/hero-bg.png");
+    position: sticky;
+    /* footer age hide hoye jabe navbar  footer parent*/
+    top: 0;
+    z-index: 1;
+    /*  footer er age hide  kom index */
+}
+
+.nav-container {
+    padding: 4px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .nav-container .nav-logo {
+.nav-container .nav-logo {
     max-width: 138px;
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    animation: logo 1.2s infinite;
 }
 
-header .nav-container .nav-menu {
+@keyframes logo {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.nav-container .nav-menu {
     list-style: none;
     display: flex;
     gap: 32px;
 }
 
-header .nav-container .nav-menu a {
+.nav-container .nav-menu a {
     text-decoration: none;
-    color: #000000;
+    color: white;
     font-size: 16px;
     font-weight: 500;
-    line-height: 152%;
+    /* line-height: 152%; */
 }
 
 .nav-btn {
@@ -126,7 +155,28 @@ header #banner {
     background-color: #469165;
     border-radius: 50%;
     cursor: pointer;
+    animation: kamal 0.8s infinite;
+
 }
+
+@keyframes kamal {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
 
 .banner-content .early-access .early-text {
     font-size: clamp(14px, 2vw, 16px);
@@ -174,14 +224,17 @@ header #banner {
     text-align: center;
     gap: 10px;
     cursor: pointer;
+    animation: my 1.5s ease-out forwards;
 }
 
-.banner-btn .green-btn:hover {
-    border: 1px solid white;
-    background: none;
-    transition: 1s;
-    transition: 1s;
-    transform: translate(-14px);
+@keyframes my {
+    from {
+        transform: translateX(-900%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 .banner-content .banner-btn .white-btn {
@@ -196,13 +249,18 @@ header #banner {
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    animation: your 1.5s ease-out forwards;
 }
 
-.banner-btn .white-btn:hover {
-    border: none;
-    background-color: #469165;
-    transition: 1s;
-    transform: translate(14px);
+
+@keyframes your {
+    from {
+        transform: translateX(900%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* ---------banner heading style end------------- */
@@ -305,13 +363,14 @@ header #banner {
 }
 
 .solution-container .solution-content .solution-list li {
-    font-size: clamp(14px, 2vw, 16px);
-    line-height: clamp(12px, 2vw, 20px);
-    margin-bottom: clamp(8px, 2vw, 16px);
+    font-size: 16px;
+    line-height: clamp(14px, 2vw, 20px);
+    margin-bottom: clamp(14px, 1vw, 16px);
     color: #001931;
     list-style: none;
     display: flex;
     align-items: flex-start;
+    justify-content: left;
     gap: 6px;
 }
 
@@ -378,6 +437,10 @@ header #banner {
 /* --------footer area style start------- */
 footer {
     background-color: #001931;
+    position: relative;
+    /* nvabar hidden footer parent  */
+    z-index: 10;
+    /* footer navbar hide */
 }
 
 footer .footer-container {

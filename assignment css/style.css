@@ -107,8 +107,7 @@ footer {
 /* ---------banner heading style start------------- */
 header #banner {
     background: url("../assets/hero-bg.png");
-    background-position: center;
-    background-size: cover;
+    background-position: right top;
     background-repeat: no-repeat;
     min-height: clamp(630px, 85vh, 900px);
     display: flex;
@@ -158,8 +157,6 @@ header #banner {
     }
 }
 
-
-
 .banner-content .early-access .early-text {
     font-size: clamp(14px, 2vw, 16px);
     font-weight: 500;
@@ -206,9 +203,9 @@ header #banner {
     text-align: center;
     gap: 10px;
     cursor: pointer;
-    animation: my 1.5s ease-out forwards;
+    /* animation: my 1.5s ease-out forwards; */
 }
-
+/* 
 @keyframes my {
     from {
         transform: translateX(-900%);
@@ -217,7 +214,7 @@ header #banner {
     to {
         transform: translateX(0);
     }
-}
+} */
 
 .banner-content .banner-btn .white-btn {
     font-size: clamp(14px, 2vw, 16px);
@@ -231,11 +228,10 @@ header #banner {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    animation: your 1.5s ease-out forwards;
+    /* animation: your 1.5s ease-out forwards; */
 }
 
-
-@keyframes your {
+/* @keyframes your {
     from {
         transform: translateX(900%);
     }
@@ -243,7 +239,7 @@ header #banner {
     to {
         transform: translateX(0);
     }
-}
+} */
 
 /* ---------banner heading style end------------- */
 
